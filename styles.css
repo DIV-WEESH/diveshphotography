@@ -1,0 +1,308 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color:black;
+  }
+  
+  .custom-button {
+    background-color: #dd2a7b; /* Green background */
+    color: white; /* White text */
+    padding: 10px 20px; /* Padding for better spacing */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1rem; /* Font size */
+    font-family: 'Poppins', sans-serif; /* Use a modern font */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+  }
+  
+  .custom-button:hover {
+    background-color: yellow; /* Darker green on hover */
+  }
+
+  .contain80 {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Header */
+  header {
+    margin-top: 80px;
+    background: url('c7.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 200px;
+    height: fit-content;
+    text-align: right;
+    position: relative;
+  }
+  
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+  
+  #logo {
+    
+    align-items: start;
+    align-content: start;
+    top: 1px; /* Adjust as needed */
+    right: 1px; /* Adjust as needed */
+    z-index: 10; /* Ensure the logo is above other elements */
+  }
+  
+  .logo {
+    height: 30px; /* Adjust size as needed */
+    width: auto;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Hero Section */
+  #hero {
+    background-color: black;
+    position: relative;
+    overflow: hidden;
+    height: 90vh; /* Reduced height */
+  }
+  
+  .slider {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .slides {
+    display: flex;
+    transition: transform 0.7s ease-in-out;
+  }
+  
+  .slide {
+    width: 100%;
+    height: 90vh; /* Reduced height */
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+  
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1.5rem;
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
+  
+  .dots-container {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+  }
+  
+  .dot {
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .dot.active {
+    background-color: #fff;
+  }
+  
+  .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    z-index: 2;
+  }
+  
+  .hero-text h2 {
+    font-size: 3rem;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .hero-text p {
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* About Section */
+  #about {
+    padding: 50px 0;
+    text-align: center;
+    background-color: black; /* Green background */
+    color: #fff; /* Optional: Change text color to white for better contrast */
+  }
+  
+  #about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  #about p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Work Section */
+  #work {
+    background-color: black;
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  #work h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: white;
+  }
+  
+  .gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .gallery-item {
+    flex: 1 1 30%;
+    margin: 10px;
+    position: relative;
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .image-title {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+  }
+
+ /* Creators Section */
+#creators {
+    background-color: black;
+    border: solid white;
+    border-radius: 15px;
+
+    padding: 15px 0;
+    text-align: center;
+     /* Dark background */
+  }
+  
+  #creators h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: white; /* White text color */
+  }
+  
+  .creator-frame {
+    display: inline-block;
+    padding: 2px; /* Frame padding */
+    background-color: transparent; /* Transparent frame background */
+    border-radius: 100%; /* Makes the frame oval */
+    box-shadow: 20px 4px 200px #3eb2f0; /* Subtle shadow */
+    margin-bottom: 20px; /* Space between image and button */
+    overflow: hidden; /* Ensures the image stays within the oval frame */
+    position: relative; /* Allows absolute positioning inside */
+    left: 0; /* Align to the left edge */
+    margin-left: 0; /* Remove any default margin */
+  }
+  
+  .creator-image {
+    width: 350px; /* Adjust image size */
+    height: 390px;
+    border-radius: 90%; /* Circular image */
+    object-fit: cover; /* Ensures the image fits well */
+    display: block; /* Ensures the image behaves correctly */
+  }
+  
+  .creator-button {
+    background-color: #8134af; /* Purple background */
+    color: white; /* White text */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px; /* Space between image and button */
+  }
+  
+  .creator-button:hover {
+    background-color: #515bd4; /* Darker blue on hover */
+  }
+
+
+  #intro
+  {
+    color: white;
+    align-items: end;
+  }
